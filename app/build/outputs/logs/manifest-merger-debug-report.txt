@@ -4,6 +4,7 @@ ADDED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/Hannan
 INJECTED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:2:1-31:12
 INJECTED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:2:1-31:12
 INJECTED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:2:1-31:12
+MERGED from [androidx.databinding:viewbinding:7.2.1] /Users/hannanmax/.gradle/caches/transforms-3/8d0c9d212fd8610236b904cc15dd0187/transformed/viewbinding-7.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] /Users/hannanmax/.gradle/caches/transforms-3/5ecf78887d09c8d5772bfd0d13860753/transformed/material-1.6.1/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/hannanmax/.gradle/caches/transforms-3/d10fa956e3e1e972ef741daddd482118/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/hannanmax/.gradle/caches/transforms-3/27dd2688a846b39ae072e7dee078818a/transformed/appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
@@ -17,7 +18,6 @@ MERGED from [androidx.loader:loader:1.0.0] /Users/hannanmax/.gradle/caches/trans
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/hannanmax/.gradle/caches/transforms-3/66e174552d1b4b41959888e5e4cad5fe/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/hannanmax/.gradle/caches/transforms-3/e3232d4ca1124d8116edb327fff67c02/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.8.0] /Users/hannanmax/.gradle/caches/transforms-3/02addbe93be618b38c0f61ae4f3e715f/transformed/core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/1152d380c1318d3c0d1996de02bb16b4/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/b385069124c33f029455b96f85f9205a/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/hannanmax/.gradle/caches/transforms-3/8f4c073ecf2da2d548ca80179dc886f0/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
@@ -32,6 +32,7 @@ MERGED from [androidx.core:core:1.8.0] /Users/hannanmax/.gradle/caches/transform
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hannanmax/.gradle/caches/transforms-3/647c1e081ff4bc82028f4a31ac59770a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/hannanmax/.gradle/caches/transforms-3/73c112b4d8b8fcb3b0f686e553f66815/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/1152d380c1318d3c0d1996de02bb16b4/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/hannanmax/.gradle/caches/transforms-3/6de693277c097c9086fa65024ed77b38/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hannanmax/.gradle/caches/transforms-3/94d5455906c8df34755a223e04bb7343/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/hannanmax/.gradle/caches/transforms-3/7841089bcdfd9d32a4f9b3cea2ed6284/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
@@ -125,6 +126,8 @@ uses-sdk
 INJECTED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml
 INJECTED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.2.1] /Users/hannanmax/.gradle/caches/transforms-3/8d0c9d212fd8610236b904cc15dd0187/transformed/viewbinding-7.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.2.1] /Users/hannanmax/.gradle/caches/transforms-3/8d0c9d212fd8610236b904cc15dd0187/transformed/viewbinding-7.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.1] /Users/hannanmax/.gradle/caches/transforms-3/5ecf78887d09c8d5772bfd0d13860753/transformed/material-1.6.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.1] /Users/hannanmax/.gradle/caches/transforms-3/5ecf78887d09c8d5772bfd0d13860753/transformed/material-1.6.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/hannanmax/.gradle/caches/transforms-3/d10fa956e3e1e972ef741daddd482118/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
@@ -151,8 +154,6 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/han
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/hannanmax/.gradle/caches/transforms-3/e3232d4ca1124d8116edb327fff67c02/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.8.0] /Users/hannanmax/.gradle/caches/transforms-3/02addbe93be618b38c0f61ae4f3e715f/transformed/core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.8.0] /Users/hannanmax/.gradle/caches/transforms-3/02addbe93be618b38c0f61ae4f3e715f/transformed/core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/1152d380c1318d3c0d1996de02bb16b4/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/1152d380c1318d3c0d1996de02bb16b4/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/b385069124c33f029455b96f85f9205a/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/b385069124c33f029455b96f85f9205a/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
@@ -181,6 +182,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradl
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/hannanmax/.gradle/caches/transforms-3/73c112b4d8b8fcb3b0f686e553f66815/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/hannanmax/.gradle/caches/transforms-3/73c112b4d8b8fcb3b0f686e553f66815/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/1152d380c1318d3c0d1996de02bb16b4/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/1152d380c1318d3c0d1996de02bb16b4/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/hannanmax/.gradle/caches/transforms-3/6de693277c097c9086fa65024ed77b38/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/hannanmax/.gradle/caches/transforms-3/6de693277c097c9086fa65024ed77b38/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/hannanmax/.gradle/caches/transforms-3/94d5455906c8df34755a223e04bb7343/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41

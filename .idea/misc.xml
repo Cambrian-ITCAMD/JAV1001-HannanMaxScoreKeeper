@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/text_color_selector.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/thumb_selector.xml" value="0.1535" />
         <entry key="app/src/main/res/drawable/toggle_selector.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22475992838541675" />
+        <entry key="app/src/main/res/drawable/track_selector.xml" value="0.1535" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18874003092447922" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.2159090909090909" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.113" />
       </map>

@@ -2474,6 +2474,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_team
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2515,11 +2516,14 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable rounded_edittext
+drawable rounded_card
 drawable test_custom_background
 drawable test_level_drawable
+drawable text_color_selector
+drawable thumb_selector
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable track_selector
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2619,10 +2623,10 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btn_americal_football_score1
-id btn_americal_football_score2
-id btn_americal_football_score3
-id btn_americal_football_score6
+id btn_american_football_score1
+id btn_american_football_score2
+id btn_american_football_score3
+id btn_american_football_score6
 id btn_basketball_score1
 id btn_basketball_score2
 id btn_basketball_score3
@@ -2636,6 +2640,8 @@ id btn_freestyle_wrestling_score2
 id btn_freestyle_wrestling_score3
 id btn_freestyle_wrestling_score4
 id btn_freestyle_wrestling_score5
+id btn_reset
+id btn_save
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2717,6 +2723,8 @@ id east
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
+id edt_team1_name
+id edt_team2_name
 id elastic
 id end
 id endToStart
@@ -2783,11 +2791,14 @@ id line3
 id linear
 id listMode
 id list_item
-id ll_americal_football
+id ll_american_football
 id ll_basketball
+id ll_buttons
+id ll_card_score
 id ll_cricket
 id ll_freestyle_wrestling
 id ll_games
+id ll_score
 id ll_team1
 id ll_team2
 id masked
@@ -2901,6 +2912,7 @@ id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
+id sc_score_side
 id scale
 id screen
 id scroll
@@ -3010,6 +3022,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_team1_score
+id tv_team2_score
 id tv_title
 id unchecked
 id uniform
@@ -3721,6 +3735,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
 style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
+style SwitchTextAppearance
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar
