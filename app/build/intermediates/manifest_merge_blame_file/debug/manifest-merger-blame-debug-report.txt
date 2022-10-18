@@ -30,8 +30,8 @@
 20        android:supportsRtl="true"
 20-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:13:9-35
 21        android:testOnly="true"
-22        android:theme="@style/Theme.HannanMaxScoreKeeper" >
-22-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:14:9-58
+22        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+22-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:14:9-68
 23        <activity
 23-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:16:9-24:20
 24            android:name="com.hannanmax.hannanmax_scorekeeper.SplashScreenActivity"

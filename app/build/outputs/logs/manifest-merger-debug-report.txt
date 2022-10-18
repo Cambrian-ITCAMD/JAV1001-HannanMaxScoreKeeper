@@ -96,7 +96,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/hannanmax/.gradle/ca
 	android:allowBackup
 		ADDED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:14:9-58
+		ADDED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:14:9-68
 	android:dataExtractionRules
 		ADDED from /Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:8:9-65
 activity#com.hannanmax.hannanmax_scorekeeper.SplashScreenActivity

@@ -1,82 +1,102 @@
 [
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/layout_activity_splash_screen.xml.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_splash_screen.xml"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_main.xml"
-    },
-    {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/xml_backup_rules.xml.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/layout_activity_splash_screen.xml.flat",
-        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_splash_screen.xml"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_cambrian_logo.png.flat",
-        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/cambrian_logo.png"
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/layout_activity_splash_screen.xml.flat",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_cambrian_logo.png.flat",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/cambrian_logo.png"
+    },
+    {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/layout_activity_main.xml.flat",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_rounded_edittext.xml.flat",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/rounded_edittext.xml"
     }
 ]

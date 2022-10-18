@@ -10,4 +10,5 @@
     <color name="background">#130c1e</color>
     <color name="container_background">#221539</color>
     <color name="fonts">#f9156e</color>
+    <color name="logo_fonts">#70243c</color>
 </resources>
