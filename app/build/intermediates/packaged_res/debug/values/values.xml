@@ -16,6 +16,10 @@
     <string name="app_name_secondary">Hannan Max\nScore Keeper</string>
     <string name="enter_team_1_name">Enter Team 1 Name</string>
     <string name="enter_team_2_name">Enter Team 2 Name</string>
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@drawable/text_color_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
     <style name="Theme.AppCompat.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
