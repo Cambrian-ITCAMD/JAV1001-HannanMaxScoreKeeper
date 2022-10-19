@@ -1,9 +1,8 @@
 # HannanMaxScoreKeeper | _Manage Cambrian College Sports Scores_
 ## Authors
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
-[![MinSDK](https://img.shields.io/badge/API-11%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=26)
+[![MinSDK](https://img.shields.io/visual-studio-app-center/releases/osver/com/hannanmax/hannanmaxscorekeeper)](https://android-arsenal.com/api?level=26)
 [![Developed By](https://img.shields.io/badge/Developed%20By-@Hannan_Max-green.svg?style=flat)](https://www.hannanmax.com/)
-
 ## App Screens
 <div align="center">
     <h3>Main Activity - Details Form Card</h3>
