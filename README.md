@@ -6,14 +6,16 @@
 
 ## App Screens
 <div align="center">
-   <h3>Main Activity - Details Form Card</h3>
-  <img hight="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/GameForm.png">
+    <h3>Main Activity - Details Form Card</h3>
+    <img height="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/GameForm.png">
 </div>
 <div align="center">
-  <img hight="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/TeamNamesSetUp.png">
-  <img hight="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/ScoreSetUp.png">
-  </br>
-  <img hight="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/Game 1.png">
-  <img hight="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/Game 2.png">
-  <img hight="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/Game 3.png">
+    <h3>Team Names and Score Set Up</h3></br>
+    <img height="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/TeamNamesSetUp.png">
+    <img height="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/ScoreSetUp.png">
+    </br>
+    <h3>Types of Sports and Their Scores</h3></br>
+    <img height="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/Game 1.png">
+    <img height="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/Game 2.png">
+    <img height="350" width="150" alt="GIF" align="center" src="https://github.com/Cambrian-ITCAMD/HannanMaxScoreKeeper/blob/main/ScreenShots/Game 3.png">
 </div>
