@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, sports)
         binding.spinnerGames.adapter = adapter
 
-        // Spinner on item selected listener for enabling visibility of sports
+        // Spinner on item selected listener for enabling visibility of sports layout
         binding.spinnerGames.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
                 if(binding.spinnerGames.selectedItem.toString() == "American Football") {
