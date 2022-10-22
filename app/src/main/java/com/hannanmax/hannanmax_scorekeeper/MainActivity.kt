@@ -9,7 +9,9 @@ import java.math.RoundingMode.valueOf
 
 class MainActivity : AppCompatActivity() {
 
-    private var games = arrayOf("American Football", "Basketball", "Freestyle Wrestling", "Cricket")
+    // Array of sports
+    private var sports = arrayOf("American Football", "Basketball", "Freestyle Wrestling", "Cricket")
+    // Binding variable initialization
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +19,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, games)
+        // Setting sports array to spinner using adapter
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, sports)
         binding.spinnerGames.adapter = adapter
 
+        // Spinner on item selected listener for enabling visibility of sports
         binding.spinnerGames.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
                 if(binding.spinnerGames.selectedItem.toString() == "American Football") {
@@ -50,6 +54,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // Save button on click listener for saving data of edittext to textview of scorecard layout
+        // Initializing scores to zero and disabling save button and enabling reset button
         binding.btnSave.setOnClickListener {
             if (binding.edtTeam1Name.text.toString().trim().isNotEmpty() ||
                 binding.edtTeam1Name.text.toString().trim().isNotBlank()) {
@@ -75,6 +81,8 @@ class MainActivity : AppCompatActivity() {
             binding.spinnerGames.isEnabled = false
         }
 
+        // Reset button on click listener for removing data of textview in scorecard layout
+        // Resetting scores to zero and enabling save button and disabling reset button
         binding.btnReset.setOnClickListener {
             binding.edtTeam1Name.text = null
             binding.edtTeam2Name.text = null
@@ -89,6 +97,7 @@ class MainActivity : AppCompatActivity() {
             binding.spinnerGames.setSelection(0)
         }
 
+        // Score button American Football for 1 score
         binding.btnAmericanFootballScore1.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
@@ -98,6 +107,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button American Football for 2 score
         binding.btnAmericanFootballScore2.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
@@ -107,6 +118,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button American Football for 3 score
         binding.btnAmericanFootballScore3.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
@@ -116,6 +129,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button American Football for 6 score
         binding.btnAmericanFootballScore6.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 6
@@ -125,6 +140,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Basket for 1 score
         binding.btnBasketballScore1.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
@@ -134,6 +151,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Basket for 2 score
         binding.btnBasketballScore2.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
@@ -143,6 +162,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Basket for 3 score
         binding.btnBasketballScore3.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
@@ -152,6 +173,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button FreeStyleWrestling for 1 score
         binding.btnFreestyleWrestlingScore1.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
@@ -161,6 +184,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button FreeStyleWrestling for 2 score
         binding.btnFreestyleWrestlingScore2.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
@@ -170,6 +195,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button FreeStyleWrestling for 3 score
         binding.btnFreestyleWrestlingScore3.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
@@ -179,6 +206,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button FreeStyleWrestling for 4 score
         binding.btnFreestyleWrestlingScore4.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 4
@@ -188,6 +217,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button FreeStyleWrestling for 5 score
         binding.btnFreestyleWrestlingScore5.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 5
@@ -197,6 +228,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Cricket for 1 score
         binding.btnCricketScore1.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
@@ -206,6 +239,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Cricket for 2 score
         binding.btnCricketScore2.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
@@ -215,6 +250,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Cricket for 3 score
         binding.btnCricketScore3.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
@@ -224,6 +261,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Cricket for 4 score
         binding.btnCricketScore4.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 4
@@ -233,6 +272,8 @@ class MainActivity : AppCompatActivity() {
                 binding.tvTeam1Score.text = currentScore.toString()
             }
         }
+
+        // Score button Cricket for 6 score
         binding.btnCricketScore6.setOnClickListener{
             if(binding.scScoreSide.isChecked){
                 var currentScore = binding.tvTeam2Score.text.toString().toInt() + 6
