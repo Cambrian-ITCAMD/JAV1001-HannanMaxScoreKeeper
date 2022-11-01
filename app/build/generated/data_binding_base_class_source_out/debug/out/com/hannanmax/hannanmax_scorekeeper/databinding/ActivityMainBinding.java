@@ -37,6 +37,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnAmericanFootballScore6;
 
   @NonNull
+  public final Button btnAmericanFootballScoreUndo;
+
+  @NonNull
   public final Button btnBasketballScore1;
 
   @NonNull
@@ -44,6 +47,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final Button btnBasketballScore3;
+
+  @NonNull
+  public final Button btnBasketballScoreUndo;
 
   @NonNull
   public final Button btnCricketScore1;
@@ -61,6 +67,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnCricketScore6;
 
   @NonNull
+  public final Button btnCricketScoreUndo;
+
+  @NonNull
   public final Button btnFreestyleWrestlingScore1;
 
   @NonNull
@@ -74,6 +83,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final Button btnFreestyleWrestlingScore5;
+
+  @NonNull
+  public final Button btnFreestyleWrestlingScoreUndo;
 
   @NonNull
   public final Button btnReset;
@@ -135,13 +147,15 @@ public final class ActivityMainBinding implements ViewBinding {
   private ActivityMainBinding(@NonNull RelativeLayout rootView,
       @NonNull Button btnAmericanFootballScore1, @NonNull Button btnAmericanFootballScore2,
       @NonNull Button btnAmericanFootballScore3, @NonNull Button btnAmericanFootballScore6,
-      @NonNull Button btnBasketballScore1, @NonNull Button btnBasketballScore2,
-      @NonNull Button btnBasketballScore3, @NonNull Button btnCricketScore1,
+      @NonNull Button btnAmericanFootballScoreUndo, @NonNull Button btnBasketballScore1,
+      @NonNull Button btnBasketballScore2, @NonNull Button btnBasketballScore3,
+      @NonNull Button btnBasketballScoreUndo, @NonNull Button btnCricketScore1,
       @NonNull Button btnCricketScore2, @NonNull Button btnCricketScore3,
       @NonNull Button btnCricketScore4, @NonNull Button btnCricketScore6,
-      @NonNull Button btnFreestyleWrestlingScore1, @NonNull Button btnFreestyleWrestlingScore2,
-      @NonNull Button btnFreestyleWrestlingScore3, @NonNull Button btnFreestyleWrestlingScore4,
-      @NonNull Button btnFreestyleWrestlingScore5, @NonNull Button btnReset,
+      @NonNull Button btnCricketScoreUndo, @NonNull Button btnFreestyleWrestlingScore1,
+      @NonNull Button btnFreestyleWrestlingScore2, @NonNull Button btnFreestyleWrestlingScore3,
+      @NonNull Button btnFreestyleWrestlingScore4, @NonNull Button btnFreestyleWrestlingScore5,
+      @NonNull Button btnFreestyleWrestlingScoreUndo, @NonNull Button btnReset,
       @NonNull Button btnSave, @NonNull EditText edtTeam1Name, @NonNull EditText edtTeam2Name,
       @NonNull LinearLayout llAmericanFootball, @NonNull LinearLayout llBasketball,
       @NonNull LinearLayout llButtons, @NonNull LinearLayout llCardScore,
@@ -155,19 +169,23 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnAmericanFootballScore2 = btnAmericanFootballScore2;
     this.btnAmericanFootballScore3 = btnAmericanFootballScore3;
     this.btnAmericanFootballScore6 = btnAmericanFootballScore6;
+    this.btnAmericanFootballScoreUndo = btnAmericanFootballScoreUndo;
     this.btnBasketballScore1 = btnBasketballScore1;
     this.btnBasketballScore2 = btnBasketballScore2;
     this.btnBasketballScore3 = btnBasketballScore3;
+    this.btnBasketballScoreUndo = btnBasketballScoreUndo;
     this.btnCricketScore1 = btnCricketScore1;
     this.btnCricketScore2 = btnCricketScore2;
     this.btnCricketScore3 = btnCricketScore3;
     this.btnCricketScore4 = btnCricketScore4;
     this.btnCricketScore6 = btnCricketScore6;
+    this.btnCricketScoreUndo = btnCricketScoreUndo;
     this.btnFreestyleWrestlingScore1 = btnFreestyleWrestlingScore1;
     this.btnFreestyleWrestlingScore2 = btnFreestyleWrestlingScore2;
     this.btnFreestyleWrestlingScore3 = btnFreestyleWrestlingScore3;
     this.btnFreestyleWrestlingScore4 = btnFreestyleWrestlingScore4;
     this.btnFreestyleWrestlingScore5 = btnFreestyleWrestlingScore5;
+    this.btnFreestyleWrestlingScoreUndo = btnFreestyleWrestlingScoreUndo;
     this.btnReset = btnReset;
     this.btnSave = btnSave;
     this.edtTeam1Name = edtTeam1Name;
@@ -240,6 +258,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_american_football_score_undo;
+      Button btnAmericanFootballScoreUndo = ViewBindings.findChildViewById(rootView, id);
+      if (btnAmericanFootballScoreUndo == null) {
+        break missingId;
+      }
+
       id = R.id.btn_basketball_score1;
       Button btnBasketballScore1 = ViewBindings.findChildViewById(rootView, id);
       if (btnBasketballScore1 == null) {
@@ -255,6 +279,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.btn_basketball_score3;
       Button btnBasketballScore3 = ViewBindings.findChildViewById(rootView, id);
       if (btnBasketballScore3 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_basketball_score_undo;
+      Button btnBasketballScoreUndo = ViewBindings.findChildViewById(rootView, id);
+      if (btnBasketballScoreUndo == null) {
         break missingId;
       }
 
@@ -288,6 +318,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_cricket_score_undo;
+      Button btnCricketScoreUndo = ViewBindings.findChildViewById(rootView, id);
+      if (btnCricketScoreUndo == null) {
+        break missingId;
+      }
+
       id = R.id.btn_freestyle_wrestling_score1;
       Button btnFreestyleWrestlingScore1 = ViewBindings.findChildViewById(rootView, id);
       if (btnFreestyleWrestlingScore1 == null) {
@@ -315,6 +351,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.btn_freestyle_wrestling_score5;
       Button btnFreestyleWrestlingScore5 = ViewBindings.findChildViewById(rootView, id);
       if (btnFreestyleWrestlingScore5 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_freestyle_wrestling_score_undo;
+      Button btnFreestyleWrestlingScoreUndo = ViewBindings.findChildViewById(rootView, id);
+      if (btnFreestyleWrestlingScoreUndo == null) {
         break missingId;
       }
 
@@ -434,13 +476,14 @@ public final class ActivityMainBinding implements ViewBinding {
 
       return new ActivityMainBinding((RelativeLayout) rootView, btnAmericanFootballScore1,
           btnAmericanFootballScore2, btnAmericanFootballScore3, btnAmericanFootballScore6,
-          btnBasketballScore1, btnBasketballScore2, btnBasketballScore3, btnCricketScore1,
-          btnCricketScore2, btnCricketScore3, btnCricketScore4, btnCricketScore6,
+          btnAmericanFootballScoreUndo, btnBasketballScore1, btnBasketballScore2,
+          btnBasketballScore3, btnBasketballScoreUndo, btnCricketScore1, btnCricketScore2,
+          btnCricketScore3, btnCricketScore4, btnCricketScore6, btnCricketScoreUndo,
           btnFreestyleWrestlingScore1, btnFreestyleWrestlingScore2, btnFreestyleWrestlingScore3,
-          btnFreestyleWrestlingScore4, btnFreestyleWrestlingScore5, btnReset, btnSave, edtTeam1Name,
-          edtTeam2Name, llAmericanFootball, llBasketball, llButtons, llCardScore, llCricket,
-          llFreestyleWrestling, llGames, llScore, llTeam1, llTeam2, scScoreSide, spinnerGames,
-          tvTeam1Score, tvTeam2Score, tvTitle);
+          btnFreestyleWrestlingScore4, btnFreestyleWrestlingScore5, btnFreestyleWrestlingScoreUndo,
+          btnReset, btnSave, edtTeam1Name, edtTeam2Name, llAmericanFootball, llBasketball,
+          llButtons, llCardScore, llCricket, llFreestyleWrestling, llGames, llScore, llTeam1,
+          llTeam2, scScoreSide, spinnerGames, tvTeam1Score, tvTeam2Score, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
