@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import com.hannanmax.hannanmax_scorekeeper.databinding.ActivityMainBinding
-import java.math.RoundingMode.valueOf
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     private var sports = arrayOf("American Football", "Basketball", "Freestyle Wrestling", "Cricket")
     // Binding variable initialization
     private lateinit var binding: ActivityMainBinding
+    private var undoTeamSide: Boolean = false
+    private var undoTeamScore: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
         // Setting sports array to spinner using adapter
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, sports)
         binding.spinnerGames.adapter = adapter
+
+        binding.btnBasketballScoreUndo.visibility = View.GONE
+        binding.btnAmericanFootballScoreUndo.visibility = View.GONE
+        binding.btnFreestyleWrestlingScoreUndo.visibility = View.GONE
+        binding.btnCricketScoreUndo.visibility = View.GONE
 
         // Spinner on item selected listener for enabling visibility of sports layout
         binding.spinnerGames.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -99,190 +105,149 @@ class MainActivity : AppCompatActivity() {
 
         // Score button American Football for 1 score
         binding.btnAmericanFootballScore1.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 1
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 1)
+            initUndoTeamScores(binding.btnAmericanFootballScoreUndo, binding.scScoreSide.isChecked, 1)
         }
 
         // Score button American Football for 2 score
         binding.btnAmericanFootballScore2.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 2
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 2)
+            initUndoTeamScores(binding.btnAmericanFootballScoreUndo, binding.scScoreSide.isChecked, 2)
         }
 
         // Score button American Football for 3 score
         binding.btnAmericanFootballScore3.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 3
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 3)
+            initUndoTeamScores(binding.btnAmericanFootballScoreUndo, binding.scScoreSide.isChecked, 3)
         }
 
         // Score button American Football for 6 score
         binding.btnAmericanFootballScore6.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 6
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 6
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 6)
+            initUndoTeamScores(binding.btnAmericanFootballScoreUndo, binding.scScoreSide.isChecked, 6)
+        }
+
+        binding.btnAmericanFootballScoreUndo.setOnClickListener{
+            undoTeamScore(binding.btnAmericanFootballScoreUndo, undoTeamSide, undoTeamScore)
         }
 
         // Score button Basket for 1 score
         binding.btnBasketballScore1.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 1
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 1)
+            initUndoTeamScores(binding.btnBasketballScoreUndo, binding.scScoreSide.isChecked, 1)
         }
 
         // Score button Basket for 2 score
         binding.btnBasketballScore2.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 2
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 2)
+            initUndoTeamScores(binding.btnBasketballScoreUndo, binding.scScoreSide.isChecked, 2)
         }
 
         // Score button Basket for 3 score
         binding.btnBasketballScore3.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 3
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 3)
+            initUndoTeamScores(binding.btnBasketballScoreUndo, binding.scScoreSide.isChecked, 3)
+        }
+
+        binding.btnBasketballScoreUndo.setOnClickListener{
+            undoTeamScore(binding.btnBasketballScoreUndo, undoTeamSide, undoTeamScore)
         }
 
         // Score button FreeStyleWrestling for 1 score
         binding.btnFreestyleWrestlingScore1.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 1
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 1)
+            initUndoTeamScores(binding.btnFreestyleWrestlingScoreUndo, binding.scScoreSide.isChecked, 1)
         }
 
         // Score button FreeStyleWrestling for 2 score
         binding.btnFreestyleWrestlingScore2.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 2
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 2)
+            initUndoTeamScores(binding.btnFreestyleWrestlingScoreUndo, binding.scScoreSide.isChecked, 2)
         }
 
         // Score button FreeStyleWrestling for 3 score
         binding.btnFreestyleWrestlingScore3.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 3
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 3)
+            initUndoTeamScores(binding.btnFreestyleWrestlingScoreUndo, binding.scScoreSide.isChecked, 3)
         }
 
         // Score button FreeStyleWrestling for 4 score
         binding.btnFreestyleWrestlingScore4.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 4
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 4
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 4)
+            initUndoTeamScores(binding.btnFreestyleWrestlingScoreUndo, binding.scScoreSide.isChecked, 4)
         }
 
         // Score button FreeStyleWrestling for 5 score
         binding.btnFreestyleWrestlingScore5.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 5
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 5
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 5)
+            initUndoTeamScores(binding.btnFreestyleWrestlingScoreUndo, binding.scScoreSide.isChecked, 5)
+        }
+
+        binding.btnFreestyleWrestlingScoreUndo.setOnClickListener{
+            undoTeamScore(binding.btnFreestyleWrestlingScoreUndo, undoTeamSide, undoTeamScore)
         }
 
         // Score button Cricket for 1 score
         binding.btnCricketScore1.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 1
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 1
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 1)
+            initUndoTeamScores(binding.btnCricketScoreUndo, binding.scScoreSide.isChecked, 1)
         }
 
         // Score button Cricket for 2 score
         binding.btnCricketScore2.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 2
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 2
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 2)
+            initUndoTeamScores(binding.btnCricketScoreUndo, binding.scScoreSide.isChecked, 2)
         }
 
         // Score button Cricket for 3 score
         binding.btnCricketScore3.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 3
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 3
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 3)
+            initUndoTeamScores(binding.btnCricketScoreUndo, binding.scScoreSide.isChecked, 3)
         }
 
         // Score button Cricket for 4 score
         binding.btnCricketScore4.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 4
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 4
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 4)
+            initUndoTeamScores(binding.btnCricketScoreUndo, binding.scScoreSide.isChecked, 4)
         }
 
         // Score button Cricket for 6 score
         binding.btnCricketScore6.setOnClickListener{
-            if(binding.scScoreSide.isChecked){
-                var currentScore = binding.tvTeam2Score.text.toString().toInt() + 6
-                binding.tvTeam2Score.text = currentScore.toString()
-            } else {
-                var currentScore = binding.tvTeam1Score.text.toString().toInt() + 6
-                binding.tvTeam1Score.text = currentScore.toString()
-            }
+            increaseTeamScores(binding.scScoreSide.isChecked, 6)
+            initUndoTeamScores(binding.btnCricketScoreUndo, binding.scScoreSide.isChecked, 6)
         }
 
+        binding.btnCricketScoreUndo.setOnClickListener{
+            undoTeamScore(binding.btnCricketScoreUndo, undoTeamSide, undoTeamScore)
+
+        }
+    }
+
+    private fun increaseTeamScores(teamSide: Boolean, increaseScoreValue: Int) {
+        if(teamSide){
+            val currentScore = binding.tvTeam2Score.text.toString().toInt() + increaseScoreValue
+            binding.tvTeam2Score.text = currentScore.toString()
+        } else {
+            val currentScore = binding.tvTeam1Score.text.toString().toInt() + increaseScoreValue
+            binding.tvTeam1Score.text = currentScore.toString()
+        }
+    }
+
+    private fun initUndoTeamScores(btnScoreUndo: Button, teamSide: Boolean, undoScoreValue: Int) {
+        btnScoreUndo.visibility = View.VISIBLE
+        undoTeamSide = teamSide
+        undoTeamScore = undoScoreValue
+    }
+
+    private fun undoTeamScore(btnUndoButton: Button, teamSide: Boolean, undoScoreValue: Int){
+        if(teamSide){
+            val currentScore = binding.tvTeam2Score.text.toString().toInt() - undoScoreValue
+            binding.tvTeam2Score.text = currentScore.toString()
+        } else {
+            val currentScore = binding.tvTeam1Score.text.toString().toInt() - undoScoreValue
+            binding.tvTeam1Score.text = currentScore.toString()
+        }
+        undoTeamScore = 0
+        btnUndoButton.visibility = View.GONE
     }
 }
