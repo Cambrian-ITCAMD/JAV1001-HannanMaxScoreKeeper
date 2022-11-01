@@ -9,6 +9,7 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
+
     <!--TextView title on the top of activity-->
     <TextView
         android:id="@+id/tv_title"
@@ -287,6 +288,21 @@
                     android:layout_marginLeft="4dp"
                     android:text="6+" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_american_football_score_undo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_games"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="4dp"
+                    android:text="Undo" />
+            </LinearLayout>
         </LinearLayout>
 
         <!--Invisible Linear Layout for containing textview for sport name of BasketBall and buttons for scores-->
@@ -346,6 +362,21 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginRight="4dp"
                     android:text="3+" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_basketball_score_undo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_games"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="4dp"
+                    android:text="Undo" />
             </LinearLayout>
         </LinearLayout>
 
@@ -432,6 +463,21 @@
                     android:layout_marginRight="4dp"
                     android:text="5+" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_freestyle_wrestling_score_undo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_games"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="4dp"
+                    android:text="Undo" />
+            </LinearLayout>
         </LinearLayout>
 
         <!--Invisible Linear Layout for containing textview for sport name of cricket and buttons for scores-->
@@ -516,6 +562,21 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginRight="4dp"
                     android:text="6+" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cricket_score_undo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_games"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="4dp"
+                    android:text="Undo" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
