@@ -6,7 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     tools:context=".MainActivity">
 
 
@@ -16,7 +15,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:text="@string/app_name"/>
@@ -26,28 +24,32 @@
         android:id="@+id/ll_team1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="8dp"
-        android:layout_below="@+id/tv_title">
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Team 1 Name"
+            android:layout_margin="8dp"
+            android:text="@string/team_1_name"
             android:textColor="@color/fonts"
-            android:textSize="18sp"
-            android:layout_margin="8dp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/edt_team1_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:layout_weight="1"
-            android:hint="@string/enter_team_1_name"
-            android:textColor="@color/white"
             android:background="@drawable/rounded_card"
+            android:hint="@string/enter_team_1_name"
             android:padding="8dp"
-            android:textColorHint="@color/white"
-            android:layout_margin="8dp" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </LinearLayout>
 
     <!--Linear Layout containing, textview and EditView to take team 2 name-->
@@ -63,7 +65,7 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Team 2 Name"
+            android:text="@string/team_2_name"
             android:textColor="@color/fonts"
             android:textSize="18sp" />
 
@@ -95,7 +97,7 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:text="Select Game"
+            android:text="@string/select_game"
             android:textColor="@color/fonts"
             android:textSize="18sp" />
 
@@ -124,16 +126,18 @@
             android:id="@+id/btn_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="4dp"
-            android:text="Save" />
+            android:layout_marginEnd="4dp"
+            android:text="@string/save"
+            style="@style/SuccessButton"/>
 
         <Button
             android:id="@+id/btn_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp"
             android:enabled="false"
-            android:text="Reset Data" />
+            android:text="@string/reset_data"
+            style="@style/DangerButton"/>
     </LinearLayout>
 
     <!--Invisible Relative Layout containing, team images and score with a switchCompact to switch between teams-->
@@ -177,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="0"
+                    android:text="@string/_0"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
 
@@ -186,7 +190,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:text=" - "
+                    android:text="@string/spacewithdash"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
 
@@ -195,7 +199,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="0"
+                    android:text="@string/_0"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
 
@@ -212,8 +216,8 @@
                 android:layout_gravity="center"
                 android:checked="false"
                 android:textAllCaps="false"
-                android:textOff="Team 1"
-                android:textOn="Team 2"
+                android:textOff="@string/team_1"
+                android:textOn="@string/team_2"
                 android:textSize="15sp"
                 android:thumb="@drawable/thumb_selector"
                 app:showText="true"
@@ -235,7 +239,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="American FootBall Score"
+                android:text="@string/american_football_score"
                 android:textColor="@color/fonts"
                 android:textSize="18sp" />
 
@@ -249,19 +253,15 @@
                     android:id="@+id/btn_american_football_score1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="1+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_1" />
 
                 <Button
                     android:id="@+id/btn_american_football_score2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="4dp"
-                    android:text="2+" />
+                    android:layout_marginStart="4dp"
+                    android:text="@string/_2" />
             </LinearLayout>
 
             <LinearLayout
@@ -274,19 +274,15 @@
                     android:id="@+id/btn_american_football_score3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="3+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_3" />
 
                 <Button
                     android:id="@+id/btn_american_football_score6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="4dp"
-                    android:text="6+" />
+                    android:layout_marginStart="4dp"
+                    android:text="@string/_6" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -298,10 +294,8 @@
                     android:id="@+id/btn_american_football_score_undo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="Undo" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/undo" />
             </LinearLayout>
         </LinearLayout>
 
@@ -319,7 +313,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BasketBall Score"
+                android:text="@string/basketball_score"
                 android:textColor="@color/fonts"
                 android:textSize="18sp" />
 
@@ -333,19 +327,15 @@
                     android:id="@+id/btn_basketball_score1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="1+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_1" />
 
                 <Button
                     android:id="@+id/btn_basketball_score2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="4dp"
-                    android:text="2+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_2" />
             </LinearLayout>
 
             <LinearLayout
@@ -358,10 +348,8 @@
                     android:id="@+id/btn_basketball_score3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="3+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_3" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -373,10 +361,8 @@
                     android:id="@+id/btn_basketball_score_undo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="Undo" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/undo" />
             </LinearLayout>
         </LinearLayout>
 
@@ -394,7 +380,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Freestyle Wrestling Score"
+                android:text="@string/freestyle_wrestling_score"
                 android:textColor="@color/fonts"
                 android:textSize="18sp" />
 
@@ -408,19 +394,15 @@
                     android:id="@+id/btn_freestyle_wrestling_score1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="1+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_1" />
 
-                btnCricketScore<Button
+                <Button
                     android:id="@+id/btn_freestyle_wrestling_score2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="4dp"
-                    android:text="2+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_2" />
             </LinearLayout>
 
             <LinearLayout
@@ -433,19 +415,15 @@
                     android:id="@+id/btn_freestyle_wrestling_score3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="3+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_3" />
 
                 <Button
                     android:id="@+id/btn_freestyle_wrestling_score4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="4dp"
-                    android:text="4+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_4" />
             </LinearLayout>
 
             <LinearLayout
@@ -458,10 +436,8 @@
                     android:id="@+id/btn_freestyle_wrestling_score5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="5+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_5" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -473,10 +449,8 @@
                     android:id="@+id/btn_freestyle_wrestling_score_undo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="Undo" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/undo" />
             </LinearLayout>
         </LinearLayout>
 
@@ -494,7 +468,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cricket Score"
+                android:text="@string/cricket_score"
                 android:textColor="@color/fonts"
                 android:textSize="18sp" />
 
@@ -508,19 +482,15 @@
                     android:id="@+id/btn_cricket_score1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="1+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_1" />
 
                 <Button
                     android:id="@+id/btn_cricket_score2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="4dp"
-                    android:text="2+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_2" />
             </LinearLayout>
 
             <LinearLayout
@@ -533,19 +503,15 @@
                     android:id="@+id/btn_cricket_score3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="3+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_3" />
 
                 <Button
                     android:id="@+id/btn_cricket_score4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="4dp"
-                    android:text="4+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_4" />
             </LinearLayout>
 
             <LinearLayout
@@ -558,10 +524,8 @@
                     android:id="@+id/btn_cricket_score6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="6+" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/_6" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -573,10 +537,8 @@
                     android:id="@+id/btn_cricket_score_undo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_games"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="4dp"
-                    android:text="Undo" />
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/undo" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

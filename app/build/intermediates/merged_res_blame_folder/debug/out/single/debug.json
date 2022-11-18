@@ -1,5 +1,13 @@
 [
     {
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_thumb_selector.xml.flat",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/thumb_selector.xml"
+    },
+    {
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_text_color_selector_night.xml.flat",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/text_color_selector_night.xml"
+    },
+    {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/mipmap-hdpi/ic_launcher_foreground.png"
     },
@@ -38,10 +46,6 @@
     {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/xml_backup_rules.xml.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_main.xml"
     },
     {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
@@ -110,9 +114,5 @@
     {
         "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_thumb_selector.xml.flat",
         "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/thumb_selector.xml"
-    },
-    {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-merged_res-29:/drawable_rounded_edittext.xml.flat",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/drawable/rounded_edittext.xml"
     }
 ]

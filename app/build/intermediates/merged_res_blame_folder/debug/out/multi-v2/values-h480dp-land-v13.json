@@ -4,7 +4,7 @@
             "outputFile": "com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-27:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/hannanmax/.gradle/caches/transforms-3/5ecf78887d09c8d5772bfd0d13860753/transformed/material-1.6.1/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+                    "source": "/Users/hannanmax/.gradle/caches/transforms-3/529340ea5ba68b714f3be0bcff235137/transformed/material-1.7.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

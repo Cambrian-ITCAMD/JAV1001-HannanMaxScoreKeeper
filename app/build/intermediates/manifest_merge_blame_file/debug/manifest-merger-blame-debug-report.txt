@@ -11,7 +11,7 @@
 9-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:6:5-29:19
+11-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:6:5-28:19
 12        android:allowBackup="true"
 12-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -30,31 +30,31 @@
 20        android:supportsRtl="true"
 20-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:13:9-35
 21        android:testOnly="true"
-22        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-22-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:14:9-68
+22        android:theme="@style/DayNightTheme" >
+22-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:14:9-45
 23        <activity
-23-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:16:9-24:20
+23-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:16:9-23:20
 24            android:name="com.hannanmax.hannanmax_scorekeeper.SplashScreenActivity"
 24-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:17:13-49
 25            android:exported="true" >
 25-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:18:13-36
 26            <intent-filter>
-26-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:19:13-23:29
+26-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:19:13-22:29
 27                <action android:name="android.intent.action.MAIN" />
 27-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:20:17-69
 27-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:20:25-66
 28
 29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:22:17-77
-29-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:22:27-74
+29-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:21:17-77
+29-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:21:27-74
 30            </intent-filter>
 31        </activity>
 32        <activity
-32-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:25:9-28:20
+32-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:24:9-27:20
 33            android:name="com.hannanmax.hannanmax_scorekeeper.MainActivity"
-33-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:26:13-41
+33-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:25:13-41
 34            android:exported="true" >
-34-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:27:13-36
+34-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:26:13-36
 35        </activity>
 36
 37        <provider

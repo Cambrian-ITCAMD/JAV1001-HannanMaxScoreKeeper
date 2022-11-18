@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="background">#130c1e</color>
     <color name="black">#FF000000</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#00796B</color>
+    <color name="colorPrimaryDark">#00796B</color>
     <color name="container_background">#221539</color>
+    <color name="dangerColor">#df4759</color>
     <color name="fonts">#f9156e</color>
     <color name="ic_launcher_background">#FFFFFF</color>
     <color name="logo_fonts">#70243c</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="successColor">#5cb85c</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="textColor">#000000</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="_0">0</string>
+    <string name="_1">1+</string>
+    <string name="_2">2+</string>
+    <string name="_3">3+</string>
+    <string name="_4">4+</string>
+    <string name="_5">5+</string>
+    <string name="_6">6+</string>
+    <string name="american_football_score">American FootBall Score</string>
     <string name="app_name">HannanMaxScoreKeeper</string>
     <string name="app_name_secondary">Hannan Max\nScore Keeper</string>
+    <string name="basketball_score">BasketBall Score</string>
+    <string name="cricket_score">Cricket Score</string>
     <string name="enter_team_1_name">Enter Team 1 Name</string>
     <string name="enter_team_2_name">Enter Team 2 Name</string>
-    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
-        <item name="android:textColor">@drawable/text_color_selector</item>
-        <item name="android:textSize">14sp</item>
+    <string name="freestyle_wrestling_score">Freestyle Wrestling Score</string>
+    <string name="reset_data">Reset Data</string>
+    <string name="save">Save</string>
+    <string name="select_game">Select Game</string>
+    <string name="spacewithdash">-</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_1_name">Team 1 Name</string>
+    <string name="team_2">Team 2</string>
+    <string name="team_2_name">Team 2 Name</string>
+    <string name="undo">Undo</string>
+    <style name="DangerButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="backgroundTint">@color/dangerColor</item>
+        <item name="android:textColor">@color/black</item>
     </style>
-    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="DayNightTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -30,11 +56,34 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="android:textViewStyle">@style/MyStyle</item>
+
+    </style>
+    <style name="MyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="SuccessButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="backgroundTint">@color/successColor</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@drawable/text_color_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Theme.DarkTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
     </style>
 </resources>

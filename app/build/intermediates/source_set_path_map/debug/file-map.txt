@@ -4,7 +4,7 @@ com.hannanmax.hannanmax_scorekeeper.app-savedstate-1.2.0-2 /Users/hannanmax/.gra
 com.hannanmax.hannanmax_scorekeeper.app-appcompat-resources-1.5.1-3 /Users/hannanmax/.gradle/caches/transforms-3/27dd2688a846b39ae072e7dee078818a/transformed/appcompat-resources-1.5.1/res
 com.hannanmax.hannanmax_scorekeeper.app-activity-1.5.1-4 /Users/hannanmax/.gradle/caches/transforms-3/3606bdb7318b2216f999c2f9f17756e1/transformed/activity-1.5.1/res
 com.hannanmax.hannanmax_scorekeeper.app-lifecycle-process-2.4.1-5 /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/res
-com.hannanmax.hannanmax_scorekeeper.app-material-1.6.1-6 /Users/hannanmax/.gradle/caches/transforms-3/5ecf78887d09c8d5772bfd0d13860753/transformed/material-1.6.1/res
+com.hannanmax.hannanmax_scorekeeper.app-material-1.7.0-6 /Users/hannanmax/.gradle/caches/transforms-3/529340ea5ba68b714f3be0bcff235137/transformed/material-1.7.0/res
 com.hannanmax.hannanmax_scorekeeper.app-lifecycle-viewmodel-2.5.1-7 /Users/hannanmax/.gradle/caches/transforms-3/66e174552d1b4b41959888e5e4cad5fe/transformed/lifecycle-viewmodel-2.5.1/res
 com.hannanmax.hannanmax_scorekeeper.app-cardview-1.0.0-8 /Users/hannanmax/.gradle/caches/transforms-3/6de693277c097c9086fa65024ed77b38/transformed/cardview-1.0.0/res
 com.hannanmax.hannanmax_scorekeeper.app-lifecycle-runtime-2.5.1-9 /Users/hannanmax/.gradle/caches/transforms-3/73c112b4d8b8fcb3b0f686e553f66815/transformed/lifecycle-runtime-2.5.1/res

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/rounded_card.xml" value="0.1535" />
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/text_color_selector.xml" value="0.1535" />
         <entry key="app/src/main/res/drawable/thumb_selector.xml" value="0.1535" />

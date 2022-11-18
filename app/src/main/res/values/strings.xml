@@ -3,4 +3,24 @@
     <string name="app_name_secondary">Hannan Max\nScore Keeper</string>
     <string name="enter_team_1_name">Enter Team 1 Name</string>
     <string name="enter_team_2_name">Enter Team 2 Name</string>
+    <string name="team_1_name">Team 1 Name</string>
+    <string name="team_2_name">Team 2 Name</string>
+    <string name="select_game">Select Game</string>
+    <string name="save">Save</string>
+    <string name="reset_data">Reset Data</string>
+    <string name="_0">0</string>
+    <string name="spacewithdash">-</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="american_football_score">American FootBall Score</string>
+    <string name="_1">1+</string>
+    <string name="_2">2+</string>
+    <string name="_3">3+</string>
+    <string name="_6">6+</string>
+    <string name="undo">Undo</string>
+    <string name="basketball_score">BasketBall Score</string>
+    <string name="freestyle_wrestling_score">Freestyle Wrestling Score</string>
+    <string name="_4">4+</string>
+    <string name="_5">5+</string>
+    <string name="cricket_score">Cricket Score</string>
 </resources>
