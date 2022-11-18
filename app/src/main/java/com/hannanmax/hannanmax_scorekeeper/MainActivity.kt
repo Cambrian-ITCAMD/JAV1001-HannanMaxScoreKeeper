@@ -9,7 +9,10 @@ import com.hannanmax.hannanmax_scorekeeper.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     // Array of sports
-    private var sports = arrayOf("American Football", "Basketball", "Freestyle Wrestling", "Cricket")
+    private var sports = arrayOf("American Football",
+        "Basketball",
+        "Freestyle Wrestling",
+        "Cricket")
     // Binding variable initialization
     private lateinit var binding: ActivityMainBinding
     private var undoTeamSide: Boolean = false
@@ -30,8 +33,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnCricketScoreUndo.visibility = View.GONE
 
         // Spinner on item selected listener for enabling visibility of sports layout
+
         binding.spinnerGames.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 if(binding.spinnerGames.selectedItem.toString() == "American Football") {
                     binding.llAmericanFootball.visibility = View.VISIBLE
                     binding.llBasketball.visibility = View.INVISIBLE
@@ -219,7 +223,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnCricketScoreUndo.setOnClickListener{
             undoTeamScore(binding.btnCricketScoreUndo, undoTeamSide, undoTeamScore)
-
         }
     }
 
