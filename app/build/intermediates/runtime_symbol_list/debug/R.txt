@@ -3635,10 +3635,8 @@ int string path_password_strike_through 0x7f100099
 int string preference_copied 0x7f1000ac
 int string reset_data 0x7f10009a
 int string save 0x7f10009b
-int string save_game_score 0x7f1000b5
 int string search_menu_title 0x7f10009c
 int string select_game 0x7f10009d
-int string settings 0x7f1000b6
 int string spacewithdash 0x7f10009e
 int string status_bar_notification_info_overflow 0x7f10009f
 int string summary_collapsed_preference_list 0x7f1000af
@@ -3648,7 +3646,6 @@ int string team_2 0x7f1000a2
 int string team_2_name 0x7f1000a3
 int string title_activity_settings 0x7f1000b2
 int string undo 0x7f1000a4
-int string unsave_game_score 0x7f1000b7
 int string v7_preference_off 0x7f1000b3
 int string v7_preference_on 0x7f1000b4
 int style AlertDialog_AppCompat 0x7f110000

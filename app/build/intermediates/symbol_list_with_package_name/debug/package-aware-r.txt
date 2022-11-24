@@ -3636,10 +3636,8 @@ string path_password_strike_through
 string preference_copied
 string reset_data
 string save
-string save_game_score
 string search_menu_title
 string select_game
-string settings
 string spacewithdash
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
@@ -3649,7 +3647,6 @@ string team_2
 string team_2_name
 string title_activity_settings
 string undo
-string unsave_game_score
 string v7_preference_off
 string v7_preference_on
 style AlertDialog_AppCompat

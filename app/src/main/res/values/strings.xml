@@ -24,11 +24,4 @@
     <string name="_5">5+</string>
     <string name="cricket_score">Cricket Score</string>
     <string name="title_activity_settings">SettingsActivity</string>
-
-    <!-- Preference Titles -->
-    <string name="settings">Settings</string>
-
-    <!-- Save Game Preferences -->
-    <string name="save_game_score">Save game scores</string>
-    <string name="unsave_game_score">Unsave game scores</string>
 </resources>

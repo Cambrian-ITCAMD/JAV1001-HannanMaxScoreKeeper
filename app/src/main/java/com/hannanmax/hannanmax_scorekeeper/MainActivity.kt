@@ -1,13 +1,19 @@
 package com.hannanmax.hannanmax_scorekeeper
 
+import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.preference.PreferenceManager
 import com.hannanmax.hannanmax_scorekeeper.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,10 +27,17 @@ class MainActivity : AppCompatActivity() {
     private var undoTeamSide: Boolean = false
     private var undoTeamScore: Int = 0
 
+    // Shared Preference node
+    private lateinit var sharedPrefs: SharedPreferences
+    val storeScoreDataSettings = "StoreScoreDataSettings"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // initiating preference manager to get default shared preferences
+        sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this)
 
         // Setting sports array to spinner using adapter
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, sports)
@@ -227,6 +240,13 @@ class MainActivity : AppCompatActivity() {
         binding.btnCricketScoreUndo.setOnClickListener{
             undoTeamScore(binding.btnCricketScoreUndo, undoTeamSide, undoTeamScore)
         }
+
+        // function for settings
+        settings()
+    }
+
+    private fun settings() {
+        //
     }
 
     private fun increaseTeamScores(teamSide: Boolean, increaseScoreValue: Int) {
@@ -281,6 +301,82 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        sharedPrefs =  getSharedPreferences(storeScoreDataSettings, Context.MODE_PRIVATE)
+        var editor = sharedPrefs.edit()
+        if(!binding.btnSave.isEnabled){
+            editor.putString("prefs_current_game", binding.spinnerGames.selectedItem.toString())
+            editor.putString("prefs_team1_name", binding.scScoreSide.textOff.toString())
+            editor.putString("prefs_team2_name", binding.scScoreSide.textOn.toString())
+            editor.putString("prefs_team1_score", binding.tvTeam1Score.text.toString())
+            editor.putString("prefs_team2_score", binding.tvTeam2Score.text.toString())
+            editor.putBoolean("prefs_save_values", true)
+        } else {
+            editor.clear()
+            editor.putBoolean("prefs_save_values", false)
+        }
+        editor.apply()
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        sharedPrefs =  getSharedPreferences(storeScoreDataSettings, Context.MODE_PRIVATE)
+        if(sharedPrefs.getBoolean("prefs_save_values", false)){
+            val dialogClickListener =
+                DialogInterface.OnClickListener { dialog, which ->
+                    when (which) {
+                        DialogInterface.BUTTON_POSITIVE -> {
+                            if(sharedPrefs.getString("prefs_current_game", "") == "American Football") {
+                                binding.llAmericanFootball.visibility = View.VISIBLE
+                                binding.llBasketball.visibility = View.INVISIBLE
+                                binding.llFreestyleWrestling.visibility = View.INVISIBLE
+                                binding.llCricket.visibility = View.INVISIBLE
+                            } else if(sharedPrefs.getString("prefs_current_game", "") == "Basketball") {
+                                binding.llAmericanFootball.visibility = View.INVISIBLE
+                                binding.llBasketball.visibility = View.VISIBLE
+                                binding.llFreestyleWrestling.visibility = View.INVISIBLE
+                                binding.llCricket.visibility = View.INVISIBLE
+                            } else if(sharedPrefs.getString("prefs_current_game", "") == "Freestyle Wrestling") {
+                                binding.llAmericanFootball.visibility = View.INVISIBLE
+                                binding.llBasketball.visibility = View.INVISIBLE
+                                binding.llFreestyleWrestling.visibility = View.VISIBLE
+                                binding.llCricket.visibility = View.INVISIBLE
+                            } else if(sharedPrefs.getString("prefs_current_game", "") == "Cricket") {
+                                binding.llAmericanFootball.visibility = View.INVISIBLE
+                                binding.llBasketball.visibility = View.INVISIBLE
+                                binding.llFreestyleWrestling.visibility = View.INVISIBLE
+                                binding.llCricket.visibility = View.VISIBLE
+                            }
+
+                            binding.tvTeam1Score.text = sharedPrefs.getString("prefs_team1_score", "0")
+                            binding.tvTeam2Score.text = sharedPrefs.getString("prefs_team2_score", "0")
+                            binding.scScoreSide.textOff = sharedPrefs.getString("prefs_team1_name", "Team 1")
+                            binding.scScoreSide.textOn = sharedPrefs.getString("prefs_team2_name", "Team 2")
+                            binding.llScore.visibility = View.VISIBLE
+                            binding.edtTeam1Name.isEnabled = false
+                            binding.edtTeam2Name.isEnabled = false
+                            binding.btnReset.isEnabled = true
+                            binding.btnSave.isEnabled = false
+                            binding.spinnerGames.isEnabled = false
+                        }
+                        DialogInterface.BUTTON_NEGATIVE -> {
+                            sharedPrefs =  getSharedPreferences(storeScoreDataSettings, Context.MODE_PRIVATE)
+                            var editor = sharedPrefs.edit()
+                            editor.clear()
+                            editor.putBoolean("prefs_save_values", false)
+                            editor.apply()
+                        }
+                    }
+                }
+
+            val builder: android.app.AlertDialog.Builder = android.app.AlertDialog.Builder(this)
+            builder.setMessage("Load saved data?").setPositiveButton("Yes", dialogClickListener)
+                .setNegativeButton("No", dialogClickListener).show()
         }
     }
 }

@@ -102,9 +102,7 @@ string enter_team_2_name
 string freestyle_wrestling_score
 string reset_data
 string save
-string save_game_score
 string select_game
-string settings
 string spacewithdash
 string team_1
 string team_1_name
@@ -112,7 +110,6 @@ string team_2
 string team_2_name
 string title_activity_settings
 string undo
-string unsave_game_score
 style DangerButton
 style DayNightTheme
 style MyStyle
