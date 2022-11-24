@@ -21,6 +21,14 @@
         android:testOnly="true"
         android:theme="@style/DayNightTheme" >
         <activity
+            android:name="com.hannanmax.hannanmax_scorekeeper.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.hannanmax.hannanmax_scorekeeper.SplashScreenActivity"
             android:exported="true" >
             <intent-filter>

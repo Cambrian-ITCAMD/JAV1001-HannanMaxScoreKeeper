@@ -1,14 +1,18 @@
 [
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-28:/layout/activity_splash_screen.xml",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_splash_screen.xml"
+        "merged": "com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-29:/layout/settings_activity.xml",
+        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-32:/layout/settings_activity.xml"
     },
     {
-        "merged": "com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-28:/layout/activity_main.xml",
-        "source": "com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_main.xml"
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-29:/layout/activity_main.xml",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-32:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-28:/layout/activity_main.xml",
-        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-31:/layout/activity_main.xml"
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-29:/layout/activity_splash_screen.xml",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-32:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-29:/layout/settings_activity.xml",
+        "source": "/Users/hannanmax/.gradle/daemon/7.3.3/com.hannanmax.hannanmax_scorekeeper.app-main-32:/layout/settings_activity.xml"
     }
 ]

@@ -21,4 +21,6 @@
     <color name="container_background">#221539</color>
     <color name="fonts">#f9156e</color>
     <color name="logo_fonts">#70243c</color>
+    <color name="test_mtrl_calendar_day">#70243c</color>
+    <color name="test_mtrl_calendar_day_selected">#70243c</color>
 </resources>

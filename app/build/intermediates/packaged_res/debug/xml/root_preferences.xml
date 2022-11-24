@@ -1,0 +1,8 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:summaryOn="@string/unsave_game_score"
+        app:summaryOff="@string/save_game_score" />
+
+</PreferenceScreen>

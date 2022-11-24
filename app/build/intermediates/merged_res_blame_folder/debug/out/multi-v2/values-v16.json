@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-27:/values-v16/values-v16.xml",
+            "outputFile": "com.hannanmax.hannanmax_scorekeeper.app-mergeDebugResources-28:/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/Users/hannanmax/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/res/values-v16/values-v16.xml",

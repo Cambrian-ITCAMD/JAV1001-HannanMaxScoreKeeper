@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+array reply_entries
+array reply_values
 color background
 color black
 color colorAccent
@@ -16,9 +18,13 @@ color purple_700
 color successColor
 color teal_200
 color teal_700
+color test_mtrl_calendar_day
+color test_mtrl_calendar_day_selected
 color textColor
 color white
 drawable cambrian_logo
+drawable ic_baseline_info_24
+drawable ic_baseline_settings_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_team
@@ -26,6 +32,8 @@ drawable rounded_card
 drawable text_color_selector
 drawable thumb_selector
 drawable track_selector
+id action_about
+id action_settings
 id app_name
 id btn_american_football_score1
 id btn_american_football_score2
@@ -65,12 +73,15 @@ id ll_team1
 id ll_team2
 id pb_loading
 id sc_score_side
+id settings
 id spinner_games
 id tv_team1_score
 id tv_team2_score
 id tv_title
 layout activity_main
 layout activity_splash_screen
+layout settings_activity
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -91,13 +102,17 @@ string enter_team_2_name
 string freestyle_wrestling_score
 string reset_data
 string save
+string save_game_score
 string select_game
+string settings
 string spacewithdash
 string team_1
 string team_1_name
 string team_2
 string team_2_name
+string title_activity_settings
 string undo
+string unsave_game_score
 style DangerButton
 style DayNightTheme
 style MyStyle
@@ -106,3 +121,4 @@ style SwitchTextAppearance
 style Theme.DarkTheme
 xml backup_rules
 xml data_extraction_rules
+xml root_preferences

@@ -1,9 +1,12 @@
 package com.hannanmax.hannanmax_scorekeeper
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.hannanmax.hannanmax_scorekeeper.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -252,5 +255,32 @@ class MainActivity : AppCompatActivity() {
         }
         undoTeamScore = 0
         btnUndoButton.visibility = View.GONE
+    }
+
+    // Inflate the menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    // Handling menu click
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle item selection
+        return when (item.getItemId()) {
+            R.id.action_about -> {
+                var name = "HannanAhmad Shaikh"
+                var courseCode = "JAV-1001"
+                var semester = 1
+                Toast.makeText(applicationContext, "Name: $name\nSemester: $semester\nCourse Code: $courseCode",Toast.LENGTH_LONG).show()
+                true
+            }
+            R.id.action_settings -> {
+                val intent = Intent(this, SettingsActivity::class.java)
+                startActivity(intent)
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }

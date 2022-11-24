@@ -11,7 +11,7 @@
 9-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:6:5-28:19
+11-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:6:5-37:19
 12        android:allowBackup="true"
 12-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,50 +34,65 @@
 22-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:14:9-45
 23        <activity
 23-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:16:9-23:20
-24            android:name="com.hannanmax.hannanmax_scorekeeper.SplashScreenActivity"
-24-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:17:13-49
-25            android:exported="true" >
-25-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:18:13-36
-26            <intent-filter>
-26-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:19:13-22:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:20:17-69
-27-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:20:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:21:17-77
-29-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:21:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity
-32-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:24:9-27:20
-33            android:name="com.hannanmax.hannanmax_scorekeeper.MainActivity"
-33-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:25:13-41
-34            android:exported="true" >
-34-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:26:13-36
-35        </activity>
+24            android:name="com.hannanmax.hannanmax_scorekeeper.SettingsActivity"
+24-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:17:13-45
+25            android:exported="false"
+25-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:18:13-37
+26            android:label="@string/title_activity_settings" >
+26-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:19:13-60
+27            <meta-data
+27-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:20:13-22:36
+28                android:name="android.app.lib_name"
+28-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:21:17-52
+29                android:value="" />
+29-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:22:17-33
+30        </activity>
+31        <activity
+31-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:24:9-32:20
+32            android:name="com.hannanmax.hannanmax_scorekeeper.SplashScreenActivity"
+32-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:25:13-49
+33            android:exported="true" >
+33-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:26:13-36
+34            <intent-filter>
+34-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:27:13-31:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:28:17-69
+35-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:28:25-66
 36
-37        <provider
-37-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-38            android:name="androidx.startup.InitializationProvider"
-38-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-39            android:authorities="com.hannanmax.hannanmax_scorekeeper.androidx-startup"
-39-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-40            android:exported="false" >
-40-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-41            <meta-data
-41-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-42-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-43                android:value="androidx.startup" />
-43-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-44            <meta-data
-44-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-45-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-46                android:value="androidx.startup" />
-46-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-47        </provider>
-48    </application>
-49
-50</manifest>
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:30:17-77
+37-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:30:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:33:9-36:20
+41            android:name="com.hannanmax.hannanmax_scorekeeper.MainActivity"
+41-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:34:13-41
+42            android:exported="true" >
+42-->/Users/hannanmax/Documents/CambrianCollege/Semester 1/Jav-1001/HannanMaxScoreKeeper/app/src/main/AndroidManifest.xml:35:13-36
+43        </activity>
+44
+45        <provider
+45-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+47            android:authorities="com.hannanmax.hannanmax_scorekeeper.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.2.0] /Users/hannanmax/.gradle/caches/transforms-3/9b425293985808c0d59d3497ece9d0a8/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/hannanmax/.gradle/caches/transforms-3/399f00721873908e1418511feeb3a729/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+55        </provider>
+56    </application>
+57
+58</manifest>
