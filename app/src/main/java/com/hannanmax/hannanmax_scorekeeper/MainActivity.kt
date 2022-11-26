@@ -8,8 +8,10 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.*
-import androidx.appcompat.app.AlertDialog
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import com.hannanmax.hannanmax_scorekeeper.databinding.ActivityMainBinding
@@ -306,15 +308,21 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
+        val prefs = PreferenceManager.getDefaultSharedPreferences(this)
         sharedPrefs =  getSharedPreferences(storeScoreDataSettings, Context.MODE_PRIVATE)
         var editor = sharedPrefs.edit()
-        if(!binding.btnSave.isEnabled){
-            editor.putString("prefs_current_game", binding.spinnerGames.selectedItem.toString())
-            editor.putString("prefs_team1_name", binding.scScoreSide.textOff.toString())
-            editor.putString("prefs_team2_name", binding.scScoreSide.textOn.toString())
-            editor.putString("prefs_team1_score", binding.tvTeam1Score.text.toString())
-            editor.putString("prefs_team2_score", binding.tvTeam2Score.text.toString())
-            editor.putBoolean("prefs_save_values", true)
+        if(prefs.getBoolean("saveScoreDataMode", false)){
+            if(!binding.btnSave.isEnabled){
+                editor.putString("prefs_current_game", binding.spinnerGames.selectedItem.toString())
+                editor.putString("prefs_team1_name", binding.scScoreSide.textOff.toString())
+                editor.putString("prefs_team2_name", binding.scScoreSide.textOn.toString())
+                editor.putString("prefs_team1_score", binding.tvTeam1Score.text.toString())
+                editor.putString("prefs_team2_score", binding.tvTeam2Score.text.toString())
+                editor.putBoolean("prefs_save_values", true)
+            } else {
+                editor.clear()
+                editor.putBoolean("prefs_save_values", false)
+            }
         } else {
             editor.clear()
             editor.putBoolean("prefs_save_values", false)
