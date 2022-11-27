@@ -306,6 +306,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Method: onPause, saves data to shared preference if saveScoreDataMode is on
     override fun onPause() {
         super.onPause()
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
@@ -330,11 +331,12 @@ class MainActivity : AppCompatActivity() {
         editor.apply()
     }
 
+    // Method: onResume, reloads the data to user interface if prefs_save_values is set to true, and only if user wishes to reload.
     override fun onResume() {
         super.onResume()
-
         sharedPrefs =  getSharedPreferences(storeScoreDataSettings, Context.MODE_PRIVATE)
         if(sharedPrefs.getBoolean("prefs_save_values", false)){
+            // Dialog Box to ask user if they want to reload saved data
             val dialogClickListener =
                 DialogInterface.OnClickListener { dialog, which ->
                     when (which) {

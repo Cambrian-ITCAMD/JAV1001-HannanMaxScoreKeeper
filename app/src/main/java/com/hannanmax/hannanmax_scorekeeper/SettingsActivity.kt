@@ -25,6 +25,7 @@ class SettingsActivity : AppCompatActivity() {
         }
     }
 
+    // Method: onBackPressed, sends back activity to main activity on back press button
     override fun onBackPressed() {
         super.onBackPressed()
         val intent = Intent(this, MainActivity::class.java)
